@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Heading-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Aid Quiz ⛑️</title>
+    <!--stylesheets-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--body-->
+    <h1>Welcome to the First Aid Quiz!</h1>
+    <!--form-->
+    <form id="Quiz" action="#">
+      <label for="name">First, what is your name?:</label>
+      <input type="text" id="name" required />
+      <!--user name submit-->
+      <button type="submit">Submit</button>
+    </form>
+    <!--our greeting-->
+    <div id="Greeting"></div>
+    <!--quiz container-->
+    <div class="quizContainer">
+      <div class="question" id="question1" data-correct="B">
+        <h2>Question 1: Which of these is not part of a first aid kit?</h2>
+        <div>
+          <label> <input type="radio" name="q1" value="A" /> Plasters </label>
+        </div>
+        <div>
+          <label> <input type="radio" name="q1" value="B" /> M and M's </label>
+        </div>
+        <div>
+          <label> <input type="radio" name="q1" value="C" /> Bandages </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q1" value="D" /> Anti-septic wipes
+          </label>
+        </div>
+        <button class="next" data-question="question2">Next</button>
+      </div>
+
+      <div class="question" id="question2" data-correct="C">
+        <h2>Question 2: Which of these is not the goal of first aid?</h2>
+        <div>
+          <label>
+            <input type="radio" name="q2" value="A" /> Preserve life
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q2" value="B" /> Prevent further injury
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q2" value="C" /> Play video games
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q2" value="D" /> Promote recovery
+          </label>
+        </div>
+        <button class="next" data-question="question3">Next</button>
+      </div>
+
+      <div class="question" id="question3" data-correct="A">
+        <h2>Question 3: What should you do first for cuts/scrapes?</h2>
+        <div>
+          <label>
+            <input type="radio" name="q3" value="A" /> Apply pressure
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q3" value="B" /> Poke the wound
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q3" value="C" /> Wrap with a bandange
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q3" value="D" /> Use anti-septic spray
+          </label>
+        </div>
+        <button class="next" data-question="question4">Next</button>
+      </div>
+
+      <div class="question" id="question4" data-correct="D">
+        <h2>Question 4: How should you treat a sprain?</h2>
+        <div>
+          <label>
+            <input type="radio" name="q4" value="A" /> Rinse the area with cool
+            water
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q4" value="B" /> Wrap the injured area
+            with a blanket
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q4" value="C" /> Apply a plaster to the
+            injured area
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q4" value="D" /> Keep the injured limb
+            elevated and apply ice to the injured area
+          </label>
+        </div>
+        <button class="next" data-question="question5">Next</button>
+      </div>
+
+      <div class="question" id="question5" data-correct="C">
+        <h2>Question 5: What is not a symptom of heat exhaustion?</h2>
+        <div>
+          <label>
+            <input type="radio" name="q5" value="A" /> Cool, moist skin
+          </label>
+        </div>
+        <div>
+          <label> <input type="radio" name="q5" value="B" /> Dizziness </label>
+        </div>
+        <div>
+          <label> <input type="radio" name="q5" value="C" /> Runny nose </label>
+        </div>
+        <div>
+          <label> <input type="radio" name="q5" value="D" /> Nausea </label>
+        </div>
+        <button class="next" data-question="question5">Next</button>
+      </div>
+      <div class="question" id="question6" data-correct="D">
+        <h2>Question 6: What is not a symptom of hypothermia?</h2>
+        <div>
+          <label> <input type="radio" name="q6" value="A" /> Shivering </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q6" value="B" /> Red, cold skin
+          </label>
+        </div>
+        <div>
+          <label> <input type="radio" name="q6" value="C" /> Weak pulse </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q6" value="D" /> Hyperactivity
+          </label>
+        </div>
+        <button class="next" data-question="question6">Next</button>
+      </div>
+      <div class="question" id="question7" data-correct="D">
+        <h2>Question 7: How should you treat a minor burn?</h2>
+        <div>
+          <label>
+            <input type="radio" name="q7" value="A" /> Wrap the person in a
+            blanket
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q7" value="B" /> Apply a plaster to the
+            burned area
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q7" value="C" /> Run ice water over the
+            afflicted area
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q7" value="D" /> Run cool water over the
+            afflicted area and apply moisturizer
+          </label>
+        </div>
+        <button class="next" data-question="question7">Next</button>
+      </div>
+
+      <div class="question" id="question8" data-correct="A">
+        <h2>
+          Question 8: What should you do if someone is suffering from an
+          allergic reaction?
+        </h2>
+        <div>
+          <label>
+            <input type="radio" name="q8" value="A" /> Lie the person on their
+            back and administer an Epipen
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q8" value="B" /> Give the person water and
+            wait 5 minutes
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q8" value="C" /> Wrap the person in a
+            blanket
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q8" value="D" /> Have the person sit up
+            straight and tilt their head back
+          </label>
+        </div>
+        <button class="next" data-question="question8">Next</button>
+      </div>
+
+      <div class="question" id="question9" data-correct="C">
+        <h2>Question 9: What should you do in the event of a seizure?</h2>
+        <div>
+          <label>
+            <input type="radio" name="q9" value="A" /> Keep the persons head
+            elevated and give them water
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q9" value="B" /> Give the person pain
+            killers and leave them alone for 5 minutes
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q9" value="C" /> Lie the person in the
+            recovery position and place something soft under their head
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q9" value="D" /> Wrap the person in a
+            blanket
+          </label>
+        </div>
+        <button class="next" data-question="question9">Next</button>
+      </div>
+
+      <div class="question" id="question10" data-correct="B">
+        <h2>Question 10: What should you do in the event of a nosebleed?</h2>
+        <div>
+          <label>
+            <input type="radio" name="q10" value="A" /> Lie the person flat on
+            their back with a wet towel on their head
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q10" value="B" /> Have the person sit down
+            and lean with their head tilted forward
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q10" value="C" /> Keep the person cool
+            with ice packs
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="q10" value="D" /> Give the person
+            anti-biotics and call a doctor
+          </label>
+        </div>
+        <!--submission button-->
+        <button id="submitQuiz">Submit</button>
+      </div>
+    </div>
+    <!--results, generated after quiz is complete -->
+    <div id="results"></div>
+    <!--scripts-->
+    <script src="app.js"></script>
+  </body>
+</html>
